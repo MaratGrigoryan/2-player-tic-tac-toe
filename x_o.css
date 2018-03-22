@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+#game{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: brown;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: none;
+}
+
+.block{
+    width: 100px; 
+    height: 100px;
+    float: right;
+    border: 1px black solid;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+
+#name{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    background: black;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 9999;
+    color: white;
+}
+
+#player1, #player2{
+    width: 200px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#play{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 5px;
+}
+#play:hover{
+    background: pink;
+}
+.load{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    background: silver;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: pink;
+}
+
+p{
+    font-size: 25px;
+    margin-top: 30px;
+}
