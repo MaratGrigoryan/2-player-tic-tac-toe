@@ -87,3 +87,6 @@ p{
     font-size: 25px;
     margin-top: 30px;
 }
+#span1, #span2{
+    color: yellowgreen;
+}

@@ -2,13 +2,25 @@ var gameblock = document.getElementById('game');
 var load = document.getElementById('load');
  for(var i = 1; i <= 9; i++ ){
     gameblock.innerHTML += "<div class='block'></div>"
-}
+};
+
+
 var play = document.getElementById("play");
 play.onclick = function () {
+    var player1 = document.getElementById("player1").value;
+    var player2 = document.getElementById("player2").value;
+    var span1 = document.getElementById("span1");
+    var span2 = document.getElementById("span2");
+    if(player1.length > 0 && player2.length > 0){
     var names = document.getElementById("name");
     names.style.display = "none";
     gameblock.style.display = "block";
     load.style.display = "block";
+    }
+    else{
+        span1.innerHTML = "PlayerN1-Name";
+        span2.innerHTML = "PlayerN2-Name";
+    }
 }
 function myFunction() {
     location.reload();
